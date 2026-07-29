@@ -25,6 +25,4 @@ Any static host works. Cheapest paths:
   page is public.
 - Add screenshots + trailer embed to both pages when captured from the
   release build.
-- Add the X profile link back (currently omitted while @NotApplicableHQ's
-  suspension appeal is pending).
 - Update the X profile website field from the Discord invite to this site.
