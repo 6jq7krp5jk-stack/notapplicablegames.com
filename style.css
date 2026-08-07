@@ -40,6 +40,15 @@ nav .brand img { width: 30px; height: 30px; border-radius: 6px; }
 nav .links { margin-left: auto; display: flex; gap: 22px; font-size: 0.95rem; }
 nav .links a { color: var(--dim); }
 nav .links a:hover { color: var(--bone); text-decoration: none; }
+@media (max-width: 960px) {
+  nav .links { gap: 14px; font-size: 0.9rem; }
+}
+@media (max-width: 760px) {
+  nav { position: static; }
+  nav .wrap { flex-direction: column; align-items: center; height: auto; gap: 8px; padding: 12px 16px 14px; }
+  nav .brand { white-space: nowrap; }
+  nav .links { margin-left: 0; flex-wrap: wrap; justify-content: center; gap: 6px 18px; font-size: 0.95rem; }
+}
 
 /* Hero */
 header.hero {
@@ -165,6 +174,10 @@ footer img { width: 26px; height: 26px; border-radius: 6px; }
 .factsheet { width: 100%; border-collapse: collapse; max-width: 760px; margin-bottom: 10px; }
 .factsheet th, .factsheet td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
 .factsheet th { color: var(--dim); font-weight: 600; white-space: nowrap; width: 180px; }
+@media (max-width: 700px) {
+  .factsheet th { white-space: normal; width: 110px; padding: 8px 10px 8px 0; }
+  .factsheet td { padding: 8px 0; word-break: break-word; }
+}
 .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; margin-top: 12px; }
 .gallery figure { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px; }
 .gallery img { width: 100%; border-radius: 6px; display: block; }
