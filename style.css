@@ -65,9 +65,9 @@ header.hero .veil {
   background: linear-gradient(180deg, rgba(15,12,20,0) 40%, rgba(15,12,20,0.55) 78%, var(--void) 100%);
 }
 header.hero .title {
-  position: absolute; left: 0; right: 0; bottom: 26px; text-align: center;
+  position: absolute; left: 0; right: 0; top: 5%; height: 46%; text-align: center;
 }
-header.hero .title img { max-width: min(520px, 72vw); filter: drop-shadow(0 4px 18px rgba(0,0,0,0.8)); }
+header.hero .title img { max-height: 100%; max-width: 72vw; width: auto; height: auto; filter: drop-shadow(0 4px 18px rgba(0,0,0,0.8)); }
 
 .tagline {
   text-align: center;
