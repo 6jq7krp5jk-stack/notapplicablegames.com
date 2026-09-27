@@ -299,13 +299,14 @@ html.js .home .site-nav:not(.is-scrolled):not(.is-open) {
 .hero-art { position: absolute; inset: 0; z-index: -2; }
 .hero-art img {
   width: 100%; height: 100%;
-  object-fit: cover; object-position: 50% 45%;
+  object-fit: cover; object-position: 50% 30%;
   animation: hero-settle 2.4s cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
 .hero::before {
   content: ""; position: absolute; inset: 0; z-index: -1;
   background:
     linear-gradient(180deg, rgba(10, 9, 12, 0.7) 0%, rgba(10, 9, 12, 0) 16%, rgba(10, 9, 12, 0) 44%, rgba(10, 9, 12, 0.62) 68%, rgba(10, 9, 12, 0.94) 88%, var(--bg) 100%),
+    radial-gradient(38% 34% at 50% 34%, rgba(10, 9, 12, 0.62) 0%, rgba(10, 9, 12, 0.35) 55%, rgba(10, 9, 12, 0) 100%),
     radial-gradient(120% 90% at 50% 30%, rgba(10, 9, 12, 0) 45%, rgba(10, 9, 12, 0.55) 100%);
 }
 .hero-inner {
