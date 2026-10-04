@@ -460,9 +460,9 @@ a.card-media:hover img { transform: scale(1.04); }
 }
 .race-art {
   aspect-ratio: 4 / 3;
-  background-image: url("assets/keyart_hero_web.jpg");
   background-repeat: no-repeat;
-  background-size: 300% auto;
+  background-size: cover;
+  background-position: center;
   position: relative;
 }
 .race-art::after {
@@ -489,11 +489,11 @@ a.card-media:hover img { transform: scale(1.04); }
   padding: 4px 10px; border-radius: 999px;
 }
 .race--bloom { --race: var(--verdant); }
-.race--bloom .race-art { background-size: 340% auto; background-position: 23% 50%; }
+.race--bloom .race-art { background-image: url("assets/race_bloomwardens.jpg"); }
 .race--iron { --race: var(--brass); }
-.race--iron .race-art { background-size: 420% auto; background-position: 67% 80%; }
+.race--iron .race-art { background-image: url("assets/race_ironconcord.jpg"); }
 .race--choir { --race: var(--violet); }
-.race--choir .race-art { background-position: 100% 70%; }
+.race--choir .race-art { background-image: url("assets/race_hollowchoir.jpg"); }
 @media (max-width: 900px) {
   .races { grid-template-columns: 1fr; max-width: 560px; margin: 0 auto; }
   .race-art { aspect-ratio: 16 / 9; }
