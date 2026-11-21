@@ -3,6 +3,14 @@
 (function () {
   'use strict';
 
+  // The hero scene's idle motion stops while the scene is scrolled out of view.
+  var hero = document.querySelector('.hero');
+  if (hero && 'IntersectionObserver' in window) {
+    new IntersectionObserver(function (entries) {
+      hero.classList.toggle('is-offscreen', !entries[0].isIntersecting);
+    }).observe(hero.querySelector('.hero-scene') || hero);
+  }
+
   var nav = document.querySelector('.site-nav');
   if (nav) {
     var toggle = nav.querySelector('.nav-toggle');
