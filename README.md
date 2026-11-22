@@ -10,6 +10,9 @@ Static studio site for Not Applicable Games. Plain HTML and CSS, no build step:
 - `style.css`, `site.js`, `assets/` - styles, the menu toggle and screenshot viewer, images
 - `assets/home/` - the home page's gate scene as stacked layers, each in AVIF and WebP
   at two sizes with a PNG or JPEG fallback; `style.css` places them on a 2560 x 1080 stage
+- `press/` - the press kit's downloads (`logo/`, `key-art/`, `icon/`), their web previews in
+  `previews/`, and `procession-engine-press-kit.zip`. After changing a download or its link in
+  `press.html`, rebuild the zip: `python3 tools/build_press_kit.py`
 
 `site.js` is optional: without it the menu shows as a wrapped row and every
 image link opens the full-resolution file.
