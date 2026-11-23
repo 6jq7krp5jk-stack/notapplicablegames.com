@@ -557,7 +557,7 @@ a.card-media:hover img { transform: scale(1.04); }
   background: linear-gradient(90deg, transparent, var(--race), transparent);
 }
 .race-art {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1 / 1;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -566,7 +566,7 @@ a.card-media:hover img { transform: scale(1.04); }
 .race-art::after {
   content: ""; position: absolute; inset: 0;
   background:
-    linear-gradient(180deg, rgba(18, 14, 23, 0) 45%, var(--panel) 100%),
+    linear-gradient(180deg, rgba(18, 14, 23, 0) 70%, var(--panel) 100%),
     radial-gradient(130% 100% at 50% 30%, transparent 55%, rgba(18, 14, 23, 0.5));
 }
 .race-body { padding: 4px 26px 30px; position: relative; margin-top: -30px; }
@@ -587,14 +587,14 @@ a.card-media:hover img { transform: scale(1.04); }
   padding: 4px 10px; border-radius: 4px;
 }
 .race--bloom { --race: var(--verdant); }
-.race--bloom .race-art { background-image: url("assets/race_bloomwardens.jpg"); }
+.race--bloom .race-art { background-image: url("assets/race_bloomwardens.jpg?v=2"); }
 .race--iron { --race: var(--forge); }
-.race--iron .race-art { background-image: url("assets/race_ironconcord.jpg"); }
+.race--iron .race-art { background-image: url("assets/race_ironconcord.jpg?v=2"); }
 .race--choir { --race: var(--violet); }
-.race--choir .race-art { background-image: url("assets/race_hollowchoir.jpg"); }
+.race--choir .race-art { background-image: url("assets/race_hollowchoir.jpg?v=2"); }
 @media (max-width: 900px) {
   .races { grid-template-columns: 1fr; max-width: 560px; margin: 0 auto; }
-  .race-art { aspect-ratio: 16 / 9; }
+  .race-art { aspect-ratio: 4 / 3; background-position: center 72%; }
 }
 
 /* Gallery */
